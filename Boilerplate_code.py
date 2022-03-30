@@ -1,16 +1,16 @@
-#Importing flask module in the project
+#Importar el módulo Flask en el proyecto.
 from flask import Flask
 
-#Create an object of the Flask class
+#Crear un objeto de la clase Flask.
 app = Flask(__name__)
 
-#The route() function of the Flask class 
+#La función route() de la clase Flask.
 @app.route("/")
 
-#‘/’ URL is bound with first_flask function.
+#‘/’ URL está vinculado con la función first_flask.
 def first_flask():
 
-    return "This is my first flask program"
+    return "Este es mi primer programa en Flask"
 
-#run the application on local server
+#Ejecutamos la app en el servidor local.
 app.run()
